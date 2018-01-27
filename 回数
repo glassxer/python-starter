@@ -1,0 +1,27 @@
+'''def outcome_n(n):
+    n = n/10
+    yield n
+    
+def is_palindrome(n):
+    
+    it =outcome_n(n)
+    
+    for i in range(n):
+        while true:
+            n=next (it)
+            yield n
+            a = n%10
+        yield a
+    
+is_palindrome(10)'''
+'''def is_palindrome(n):
+    s=str(n)
+    for i in range(len(s)+1//2):
+        if s[i]!=s[-(i+1)]:
+            return False
+    return True
+print(filter(is_palindrome,range(1000)))'''
+
+def is_palindrome1(n):
+    return str(n)==str(n)[::-1]
+print(filter(is_palindrome1,range(1000)))
